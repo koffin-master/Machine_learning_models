@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
 
-cancer_Df = pd.read_csv("/Users/rahmani/Documents/Assets_ML/Datasets-master/bcancer.csv")
+cancer_Df = pd.read_csv("bcancer.csv")
 cancer_Df = cancer_Df.drop(columns=["Unnamed: 32"])
 
 numeric_col = cancer_Df.select_dtypes(include=[np.number])
