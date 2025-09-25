@@ -1,0 +1,74 @@
+Medical Expenses Prediction (Linear Regression)
+
+This project uses Linear Regression to predict medical charges for non-smokers based on their age, BMI, and number of children.
+
+The dataset is loaded from expenses.csv, filtered to only non-smokers, and a regression model is trained to estimate charges. The predictions are evaluated using RMSE (Root Mean Square Error) and visualized with Matplotlib and Seaborn.
+
+⸻
+
+📦 Libraries Used
+import matplotlib
+import numpy as np
+import pandas as pd
+import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
+import sklearn
+from sklearn.linear_model import LinearRegression
+from scipy.stats import alpha
+
+⚙️ Workflow
+	1.	Load Dataset
+	•	Reads expenses.csv into a pandas DataFrame.
+	•	Filters only non-smoker entries.
+	2.	Custom Functions
+	•	estimate_charges(age, W_age, bmi, W_bmi, children, W_children, b) → Estimates charges using manual weights.
+	•	rmse(targets, predictions) → Computes RMSE loss.
+	•	try_parameter(W_age, W_bmi, W_children, b) → Visualizes predicted vs actual charges.
+	3.	Model Training
+	•	Inputs: age, bmi, children
+	•	Target: charges
+	•	Model: Linear Regression (sklearn.linear_model.LinearRegression)
+	•	Outputs: Learned weights W and intercept b.
+	4.	Evaluation
+	•	Prints coefficients and intercept.
+	•	Prints RMSE loss.
+	•	Shows scatter plots comparing estimates vs actual charges.
+
+⸻
+
+📊 Visualizations
+	•	Scatter plots of:
+	•	Charges vs Age
+	•	Charges vs BMI (green)
+	•	Charges vs Children (orange)
+	•	Line plot for estimated regression line.
+
+⸻
+
+🚀 How to Run
+	1.	Clone this repository.
+	2.	Place the dataset expenses.csv in your project directory.
+	3.	Run the script:
+python medical_regression.py
+
+📂 Dataset Format
+
+The CSV file should have columns:
+	•	age → Age of individual
+	•	bmi → Body Mass Index
+	•	children → Number of dependents
+	•	smoker → Smoking status (yes/no)
+	•	charges → Medical charges billed
+
+⸻
+
+📈 Example Output
+	•	Learned weights W for features (age, bmi, children).
+	•	Bias b (intercept).
+	•	RMSE Loss showing model accuracy.
+	•	Visual plot comparing predicted and actual charges.
+
+⸻
+
+👉 This project is a practical example of using linear regression for real-world healthcare cost prediction.
