@@ -1,0 +1,49 @@
+Medical Expenses Prediction
+
+This project demonstrates a linear regression model to estimate medical charges based on patient features such as:
+	•	Age
+	•	BMI (Body Mass Index)
+	•	Number of children
+	•	Smoking status (filtered to non-smokers in this analysis)
+
+The dataset is read from expenses.csv, and the model is trained using scikit-learn’s LinearRegression.
+
+⸻
+
+📊 Features of the Project
+	•	Exploratory visualization using Matplotlib, Seaborn, and Plotly Express
+	•	Custom function to estimate charges using linear coefficients
+	•	RMSE (Root Mean Square Error) implementation for evaluating prediction accuracy
+	•	Training and testing of a Linear Regression model with multiple features
+	•	Visualization of predictions vs. actual medical expenses
+
+⸻
+
+⚙️ Requirements
+
+Install the dependencies using:
+pip install numpy pandas matplotlib seaborn plotly scikit-learn scipy
+
+🚀 How to Run
+	1.	Clone this repository.
+	2.	Place the dataset file expenses.csv in the project folder.
+	3.	Run the script:
+python medical_expenses_regression.py
+
+📂 Dataset
+
+The dataset expenses.csv should contain the following columns:
+	•	age → Age of the individual
+	•	bmi → Body Mass Index
+	•	children → Number of children/dependents
+	•	smoker → Smoking status (yes/no)
+	•	charges → Medical charges billed
+
+⸻
+
+📈 Example Output
+	•	Prints learned weights (W) and bias (b) of the linear regression model.
+	•	Displays the RMSE Loss between predicted and actual values.
+	•	Shows scatter plots comparing predictions vs. actual charges.
+
+⸻
