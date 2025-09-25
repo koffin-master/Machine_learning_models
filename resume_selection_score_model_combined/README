@@ -1,0 +1,74 @@
+Resume–Job Description Matching (Regression Models)
+
+This project predicts the match score between a job description and a candidate’s resume using machine learning regression models.
+
+The workflow applies TF-IDF vectorization to textual data, followed by training and tuning different regression models (Decision Tree, Random Forest, and XGBoost) using GridSearchCV. Model performance is evaluated with multiple error metrics.
+
+⸻
+
+📦 Libraries Used
+import pandas as pd
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.metrics import r2_score, root_mean_squared_error, mean_squared_error, mean_absolute_error
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from xgboost import XGBRegressor
+
+⚙️ Workflow
+	1.	Data Loading
+	•	Load dataset resume_job_matching_dataset.csv.
+	•	Features:
+	•	job_description
+	•	resume
+	•	Target:
+	•	match_score
+	2.	Data Splitting
+	•	Training: 70%
+	•	Testing: 30%
+	3.	Preprocessing
+	•	Apply TF-IDF Vectorization separately on job_description and resume text.
+	•	Managed via ColumnTransformer.
+	4.	Models Used
+	•	Decision Tree Regressor
+	•	Random Forest Regressor
+	•	XGBoost Regressor
+	5.	Hyperparameter Tuning
+	•	GridSearchCV with 5-fold cross-validation.
+	•	Parameter grids include:
+	•	Tree: max_depth, min_samples_split
+	•	Random Forest: max_depth, n_estimators
+	•	XGBoost: max_depth, n_estimators
+	6.	Evaluation Metrics
+	•	R² Score
+	•	RMSE (Root Mean Squared Error)
+	•	MSE (Mean Squared Error)
+	•	MAE (Mean Absolute Error)
+
+⸻
+
+🚀 How to Run
+	1.	Clone this repository.
+	2.	Place the dataset resume_job_matching_dataset.csv in the project folder.
+	3.	Install requirements:
+pip install pandas scikit-learn xgboost
+	4.	Run the script:
+python resume_job_matching.py
+
+⸻
+
+📈 Example Output
+
+For each model (Tree, Random_Forest, XGB), the script prints:
+R2 : Random_Forest 
+ 0.78
+RMSE : Random_Forest 
+ 5.12
+MSE : Random_Forest 
+ 26.2
+MAE : Random_Forest 
+ 3.9
+
+👉 This project demonstrates how to combine NLP preprocessing and regression modeling to solve a real-world HR problem.
