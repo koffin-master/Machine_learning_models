@@ -1,27 +1,49 @@
-AI & ML Projects Collection 🤖
+🚀 Projects
 
-Welcome to my AI & Machine Learning Projects folder! Here, I showcase projects that apply AI and ML techniques to solve real-world problems. Each project is organized in its own subfolder with clean, reusable code and clear explanations.
+1. Breast Cancer Detection 🩺
+
+Predicts whether tumors are malignant or benign using the breast cancer dataset.
+	•	Technologies: Python, Scikit-learn, Random Forest, Pandas, Data Analysis
+	•	Highlights: Feature importance visualization, classification report, and strong accuracy.
+	•	View Project
 
 ⸻
 
-🚀 Projects
+2. Medical Expenses Prediction 💊
 
-Breast Cancer Detection 🩺
-Predicts whether tumors are malignant or benign using medical datasets.
-Technologies: Python, Scikit-learn, Pandas, Classification, Data Analysis
-View Project
+Estimates healthcare charges for non-smokers based on age, BMI, and children using regression models.
+	•	Technologies: Python, Scikit-learn, Linear Regression, NumPy, Matplotlib, Seaborn
+	•	Highlights: Custom estimation functions, RMSE loss evaluation, and visualizations comparing predictions vs. actual charges.
+	•	View Project
 
-Expenses Calculation App 💰
-Calculates and estimates costs for materials in civil projects, demonstrating practical applications of logic and computation.
-Technologies: Python, Swift, Data Handling, Basic ML Concepts
-View Project
+⸻
+
+3. Resume–Job Matching 📄💼
+
+Predicts a match score between resumes and job descriptions using NLP and regression.
+	•	Technologies: Python, Scikit-learn, XGBoost, Random Forest, Decision Trees, TF-IDF, ColumnTransformer, Pipelines
+	•	Highlights: GridSearchCV hyperparameter tuning, evaluation with R², RMSE, MSE, MAE, and multi-model comparison.
+	•	View Project
+
+⸻
+
+4. Expenses Calculation App 💰 (Bonus)
+
+Calculates and estimates costs for materials in civil engineering projects, demonstrating practical applications of logic and computation.
+	•	Technologies: Swift, Python (for ML concepts), Data Handling
+	•	Highlights: User-friendly cost estimation with custom inputs and margins.
+	•	View Project
+
+⸻
 
 🛠️ Tech Stack
 	•	Languages: Python, Swift
-	•	ML/AI Libraries: Scikit-learn, Pandas, NumPy, Matplotlib
+	•	ML/AI Libraries: Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, XGBoost
 	•	Tools: Jupyter Notebook, Xcode, Git, GitHub
 
- 🌱 Goals
-	•	Showcase practical AI/ML applications in healthcare and civil engineering
-	•	Demonstrate clean, reproducible code for learning and reference
-	•	Continuously expand with more AI-powered projects
+⸻
+
+🌱 Goals
+	•	Showcase practical ML applications in healthcare, civil engineering, and HR recruitment.
+	•	Demonstrate clean, reproducible code for learning and reference.
+	•	Continuously expand with new AI-powered projects.
