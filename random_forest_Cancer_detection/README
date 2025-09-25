@@ -1,0 +1,66 @@
+Breast Cancer Classification with Random Forest
+
+This project uses a Random Forest Classifier to classify tumors as benign or malignant using the Breast Cancer dataset.
+
+The model is trained on numerical features, evaluated using accuracy and classification metrics, and feature importance analysis is performed to identify the top predictors of cancer diagnosis.
+
+⸻
+
+📦 Libraries Used
+
+import numpy as np
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+import matplotlib.pyplot as plt
+
+⚙️ Workflow
+	1.	Data Loading & Cleaning
+	•	Load dataset from bcancer.csv.
+	•	Drop unnecessary column: Unnamed: 32.
+	2.	Feature Selection
+	•	Keep only numeric columns for model input.
+	•	Target column: diagnosis (M = Malignant, B = Benign).
+	3.	Data Splitting
+	•	Training: 70%
+	•	Validation: 15%
+	•	Test: 15%
+	4.	Model Training
+	•	Model: RandomForestClassifier (default parameters).
+	•	Fit model on training data.
+	5.	Feature Importance Analysis
+	•	Extract feature importances from Random Forest.
+	•	Display and plot Top 10 most important features.
+	6.	Evaluation
+	•	Predict on validation set.
+	•	Print Classification Report (Precision, Recall, F1-Score).
+	•	Confusion Matrix & Accuracy (if added).
+
+⸻
+
+📊 Visualizations
+	•	Bar Plot of the top 10 most important features in predicting cancer.
+
+⸻
+
+🚀 How to Run
+	1.	Clone this repository.
+	2.	Place the dataset file bcancer.csv in the project folder.
+	3.	Run the script:
+python breast_cancer_rf.py
+
+📂 Dataset
+
+The dataset bcancer.csv should include:
+	•	ID and Unnamed: 32 (drop during preprocessing).
+	•	diagnosis → Target label (M = Malignant, B = Benign).
+	•	30 numerical features such as:
+	•	radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean	… and more
+
+⸻
+
+📈 Example Output
+	•	Top 10 Features ranked by importance (e.g., radius_mean, perimeter_worst, etc.).
+	•	Classification Report with Precision, Recall, F1-Score.
+	•	Bar chart showing most influential features.
