@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import os
 
 # ------------------- Load Dataset ------------------- #
-house_df = pd.read_csv("/Users/rahmani/Documents/Assets_ML/Datasets-master/house price.csv")
+house_df = pd.read_csv("/house price.csv")
 
 # One-hot encode 'city'
 encoder = OneHotEncoder(sparse_output=False)
